@@ -1420,7 +1420,116 @@ body { background: #FAFAF7; color: #1A1814; }
 
 /* Section labels — gold accent */
 .section-label { color: var(--gold) !important; }
+/* ═══════════════════════════════════════════════
+   CARL'S BRIEF — White / Black / Gold ONLY
+   No grey. Remove social from footer.
+   ═══════════════════════════════════════════════ */
 
+/* Kill all grey backgrounds */
+:root {
+  --dark:   #FFFFFF;
+  --dark-2: #FAFAF7;
+  --dark-3: #F3F0EA;
+}
+
+/* Sections that were grey → warm white */
+.logos-section    { background: #FAFAF7 !important; }
+.social-section   { background: #FAFAF7 !important; }
+.networks-section { background: #FAFAF7 !important; }
+.page-hero        { background: #FAFAF7 !important; }
+.page-hero-bg     { background: linear-gradient(135deg, #FAFAF7, #F3F0EA) !important; }
+.page-hero-content h1 { color: #1A1814 !important; }
+.page-hero-content p  { color: rgba(26,24,20,0.62) !important; }
+section[style*="background:var(--dark-2)"],
+.section[style*="background:var(--dark-2)"] { background: #FAFAF7 !important; }
+.contact-inquiries { background: #F3F0EA !important; }
+.news-wp-note      { background: #F3F0EA !important; border-color: rgba(26,24,20,0.07) !important; }
+.service-card      { background: #fff !important; }
+.service-card:hover { background: #FAFAF7 !important; }
+.post-card         { background: #fff !important; }
+.post-card:hover   { background: #FAFAF7 !important; }
+
+/* ── FOOTER — exact match to Carl's screenshot ── */
+#site-footer {
+  background: #111111 !important;
+  border-top: none !important;
+  padding: 5rem 0 0 !important;
+}
+.footer-inner {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr 1fr 1fr !important;
+  gap: 3rem !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 2rem 4rem !important;
+}
+.footer-brand .logo-main { color: #fff !important; font-size: 1.5rem !important; }
+.footer-brand .logo-main em { color: #C9A84C !important; }
+.footer-brand .logo-sub { color: #C9A84C !important; }
+.footer-tagline {
+  font-family: var(--font-body) !important;
+  font-size: 0.9rem !important;
+  color: rgba(255,255,255,0.45) !important;
+  line-height: 1.75 !important;
+  max-width: 260px !important;
+  margin-top: 1rem !important;
+}
+/* HIDE social icons from footer */
+.footer-brand .social-links,
+.footer-social { display: none !important; }
+
+/* Footer column headings — gold */
+.footer-heading,
+.footer-col h4 {
+  font-family: var(--font-body) !important;
+  font-size: 0.68rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #C9A84C !important;
+  margin-bottom: 1.5rem !important;
+}
+/* Footer links — white */
+.footer-links a {
+  font-family: var(--font-body) !important;
+  font-size: 0.9rem !important;
+  color: rgba(255,255,255,0.55) !important;
+  transition: color 0.2s !important;
+  line-height: 2.2 !important;
+}
+.footer-links a:hover { color: #C9A84C !important; }
+.footer-links li { margin-bottom: 0 !important; }
+
+/* Footer bottom bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.07) !important;
+  padding: 1.5rem 2rem !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  font-size: 0.78rem !important;
+  color: rgba(255,255,255,0.25) !important;
+  flex-direction: row !important;
+  text-align: left !important;
+}
+.footer-bottom p { margin: 0 !important; color: rgba(255,255,255,0.25) !important; }
+.footer-bottom a { color: #C9A84C !important; }
+.footer-bottom a:hover { color: #fff !important; }
+
+/* Bigger readable fonts throughout */
+body { font-size: 17px !important; }
+p    { font-size: 1rem !important; }
+.section-label { font-size: 0.75rem !important; letter-spacing: 0.28em !important; }
+.hero-tagline  { font-size: 1.1rem !important; }
+.service-card p { font-size: 0.92rem !important; }
+.post-card p    { font-size: 0.92rem !important; }
+.contact-value  { font-size: 1rem !important; }
+.bio-quote      { font-size: 1.1rem !important; }
+.footer-tagline { font-size: 0.92rem !important; }
+.footer-links a { font-size: 0.92rem !important; }
+.main-nav a     { font-size: 0.82rem !important; }
 /* Nav hover/active underline — black */
 .main-nav a { color: rgba(26,24,20,0.6) !important; }
 .main-nav a:hover, .main-nav a.active { color: #111111 !important; }
