@@ -1789,12 +1789,15 @@ body.home #site-header:not(.scrolled) .ham-btn span { background:#fff; }
   background: #FAFAF7;
 }
 
-.programs-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+.programs-section .programs-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 2.5rem !important;
 }
-
+.programs-section .program-card {
+  width: auto !important;
+  max-width: none !important;
+}
 .program-card {
   display: flex;
   flex-direction: column;
