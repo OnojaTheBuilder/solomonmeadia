@@ -1782,3 +1782,84 @@ body.home #site-header:not(.scrolled) .ham-btn span { background:#fff; }
     padding: 1.25rem 1rem;
   }
 }
+/* ==========================================
+   OUR PROGRAMS / SHOWS SECTION
+   ========================================== */
+.programs-section {
+  background: #FAFAF7;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(26,24,20,0.08);
+  background: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.35s ease;
+}
+
+.program-card:hover {
+  box-shadow: 0 8px 40px rgba(26,24,20,0.08);
+}
+
+/* 16:9 responsive iframe wrapper */
+.program-embed-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #111;
+}
+
+.program-embed-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.program-info {
+  padding: 1.8rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.program-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 0.6rem;
+  line-height: 1.2;
+}
+
+.program-desc {
+  font-size: 0.9rem;
+  color: rgba(26,24,20,0.55);
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.program-info .btn {
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .program-info {
+    padding: 1.4rem 1.5rem 1.6rem;
+  }
+}
