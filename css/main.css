@@ -575,8 +575,7 @@ p:last-child { margin-bottom: 0; }
 .service-card:hover::before { width: 100%; }
 
 .service-icon {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+   display:none;
 }
 
 .service-card h3 {
