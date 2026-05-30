@@ -2189,3 +2189,19 @@ body.home #site-header:not(.scrolled) .ham-btn span { background:#fff; }
     grid-template-columns: 1fr;
   }
 }
+.store-teaser-cards-link {
+  display: block;
+  text-decoration: none;
+}
+
+.store-teaser-cards-link .store-placeholder-card {
+  cursor: pointer;
+}
+
+.store-teaser-cards-link:hover .store-placeholder-card {
+  background: #222222;
+}
+
+.store-teaser-cards-link:hover .store-placeholder-card--accent {
+  background: rgba(201,168,76,0.2);
+}
