@@ -1865,3 +1865,105 @@ body.home #site-header:not(.scrolled) .ham-btn span { background:#fff; }
     padding: 1.4rem 1.5rem 1.6rem;
   }
 }
+/* ==========================================
+   THE SOLOMON STORE — TEASER
+   ========================================== */
+.store-teaser-section {
+  background: #111111;
+  padding: 7rem 0;
+}
+
+.store-teaser-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.store-teaser-text .section-label {
+  color: var(--gold) !important;
+}
+
+.store-teaser-text .section-title {
+  color: #ffffff !important;
+}
+
+.store-teaser-text .divider {
+  background: linear-gradient(90deg, var(--gold), transparent) !important;
+}
+
+.store-teaser-text p {
+  color: rgba(255,255,255,0.55) !important;
+  font-size: 1rem;
+}
+
+.store-teaser-text .btn {
+  border-color: var(--gold) !important;
+  color: var(--gold) !important;
+}
+
+.store-teaser-text .btn::before {
+  background: var(--gold) !important;
+}
+
+.store-teaser-text .btn:hover {
+  color: #111111 !important;
+}
+
+.store-teaser-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.store-placeholder-card {
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 3rem 1.5rem;
+  transition: background 0.3s ease;
+  cursor: default;
+}
+
+.store-placeholder-card:hover {
+  background: #222222;
+}
+
+.store-placeholder-card--accent {
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.2);
+}
+
+.store-placeholder-card--accent:hover {
+  background: rgba(201,168,76,0.14);
+}
+
+.store-placeholder-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.store-placeholder-card span {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+
+.store-placeholder-card--accent span {
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .store-teaser-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
