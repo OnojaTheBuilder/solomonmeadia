@@ -2306,3 +2306,11 @@ body.home #site-header:not(.scrolled) .ham-btn span { background:#fff; }
 .store-teaser-cards-link:hover .store-placeholder-card--accent {
   background: rgba(201,168,76,0.2);
 }
+/* ==========================================
+   HERO IMAGE — MOBILE POSITION FIX
+   ========================================== */
+@media (max-width: 768px) {
+  .hero-video-wrap img {
+    object-position: left top !important;
+  }
+}
