@@ -2314,3 +2314,51 @@ body.home #site-header:not(.scrolled) .ham-btn span { background:#fff; }
     object-position: right top !important;
   }
 }
+/* ==========================================
+   MOBILE HEADER FIXES
+   ========================================== */
+@media (max-width: 768px) {
+  /* Hide Work With Me button on mobile */
+  .header-cta-link {
+    display: none !important;
+  }
+
+  /* Fix header inner layout on mobile */
+  .header-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 1.2rem !important;
+  }
+
+  /* Make sure hamburger shows */
+  .ham-btn {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    padding: 4px !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+
+  .ham-btn span {
+    display: block !important;
+    width: 22px !important;
+    height: 1.5px !important;
+  }
+
+  /* White on hero, black when scrolled */
+  body.home #site-header:not(.scrolled) .ham-btn span {
+    background: #ffffff !important;
+  }
+
+  #site-header.scrolled .ham-btn span {
+    background: #111111 !important;
+  }
+
+  /* Hide desktop nav on mobile */
+  .main-nav {
+    display: none !important;
+  }
+}
