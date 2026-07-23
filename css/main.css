@@ -2433,3 +2433,49 @@ html, body {
     text-align: center !important;
   }
 }
+/* ==========================================
+   HAMBURGER — CLEAN OVERRIDE
+   ========================================== */
+.ham-btn {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 6px 0 !important;
+  width: 26px !important;
+  height: auto !important;
+  gap: 6px !important;
+  align-items: flex-end !important;
+  cursor: pointer;
+}
+
+.ham-btn:focus,
+.ham-btn:active {
+  outline: none !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.ham-btn span {
+  display: block !important;
+  height: 1.5px !important;
+  border-radius: 0 !important;
+  transition: width 0.3s ease, background 0.3s ease !important;
+}
+
+/* Staggered widths — editorial look */
+.ham-btn span:nth-child(1) { width: 26px !important; }
+.ham-btn span:nth-child(2) { width: 18px !important; }
+.ham-btn span:nth-child(3) { width: 26px !important; }
+
+.ham-btn:hover span:nth-child(2) { width: 26px !important; }
+
+/* Colours */
+body.home #site-header:not(.scrolled) .ham-btn span {
+  background: #ffffff !important;
+}
+
+#site-header.scrolled .ham-btn span,
+body:not(.home) .ham-btn span {
+  background: #111111 !important;
+}
