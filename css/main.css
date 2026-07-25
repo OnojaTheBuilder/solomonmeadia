@@ -2516,3 +2516,32 @@ body:not(.home) .ham-btn span {
     gap: 1.5rem;
   }
 }
+@media (max-width: 768px) {
+
+  /* Programs stack to single column on mobile */
+  .programs-section .programs-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Buttons full width, text fits */
+  .program-info .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .program-info .btn span {
+    white-space: nowrap;
+    font-size: 0.75rem;
+  }
+
+  /* Slightly smaller program title on mobile */
+  .program-title {
+    font-size: 1.2rem;
+  }
+
+  /* Product showcase also single column for consistency */
+  .product-showcase-section .product-showcase-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
