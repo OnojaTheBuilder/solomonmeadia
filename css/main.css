@@ -2502,3 +2502,17 @@ body:not(.home) .ham-btn span {
     gap: 1.5rem !important;
   }
 }
+.section-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
