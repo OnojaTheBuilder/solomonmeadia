@@ -2479,3 +2479,26 @@ body.home #site-header:not(.scrolled) .ham-btn span {
 body:not(.home) .ham-btn span {
   background: #111111 !important;
 }
+/* ==========================================
+   MOBILE DESIGN CLEANUP
+   ========================================== */
+@media (max-width: 768px) {
+
+  /* FIX 1 — Program "Watch on YouTube" buttons wrapping badly */
+  .program-info .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .program-info .btn span {
+    white-space: nowrap;
+  }
+
+  /* FIX 2 — Gallery preview heading + Full Gallery button colliding */
+  .section .reveal > div[style*="justify-content:space-between"],
+  .section .reveal > div[style*="justify-content: space-between"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1.5rem !important;
+  }
+}
