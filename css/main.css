@@ -2561,8 +2561,18 @@ body:not(.home) .ham-btn span {
     aspect-ratio: 4 / 5 !important;
   }
 }
-/* Single product — center it, don't stretch */
+/* Single product — center it */
 .product-showcase-grid {
-  max-width: 420px;
+  max-width: 480px;
   margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .product-showcase-grid {
+    max-width: 560px;
+  }
+}
+.product-showcase-footer {
+  gap: 1rem;
+  flex-wrap: wrap;
 }
