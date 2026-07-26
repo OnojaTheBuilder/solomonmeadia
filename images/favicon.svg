@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="10" fill="#111111"/>
+  <!-- Crown -->
+  <path d="M20 22 L24 28 L32 20 L40 28 L44 22 L42 34 L22 34 Z"
+        fill="#C9A84C"/>
+  <!-- KS monogram -->
+  <text x="32" y="52" font-family="Georgia, 'Playfair Display', serif"
+        font-size="20" font-weight="700" fill="#C9A84C"
+        text-anchor="middle" letter-spacing="1">KS</text>
+</svg>
