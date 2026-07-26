@@ -2545,3 +2545,19 @@ body:not(.home) .ham-btn span {
     grid-template-columns: 1fr !important;
   }
 }
+/* ==========================================
+   GALLERY PREVIEW — TALLER + FACES CENTERED
+   ========================================== */
+.section [style*="grid-template-columns:repeat(4,1fr)"] .gallery-item {
+  aspect-ratio: 3 / 4 !important;
+}
+
+.section [style*="grid-template-columns:repeat(4,1fr)"] .gallery-item img {
+  object-position: center 30% !important;
+}
+
+@media (max-width: 768px) {
+  .section [style*="grid-template-columns:repeat(4,1fr)"] .gallery-item {
+    aspect-ratio: 4 / 5 !important;
+  }
+}
