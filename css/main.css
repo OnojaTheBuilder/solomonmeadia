@@ -2561,3 +2561,8 @@ body:not(.home) .ham-btn span {
     aspect-ratio: 4 / 5 !important;
   }
 }
+/* Single product — center it, don't stretch */
+.product-showcase-grid {
+  max-width: 420px;
+  margin: 0 auto;
+}
